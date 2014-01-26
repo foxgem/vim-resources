@@ -1,0 +1,40 @@
+:colorscheme desert 
+
+set smartindent
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab
+
+set nu
+
+set cursorline
+set cursorcolumn
+
+set laststatus=2
+set statusline=
+set statusline+=%-3.3n\ " buffer number
+set statusline+=%f\ " filename
+set statusline+=%h%m%r%w " status flags
+set statusline+=\[%{strlen(&ft)?&ft:'none'}] " file type
+set statusline+=%= " right align remainder
+set statusline+=0x%-8B " character value
+set statusline+=%-14(%l,%c%V%) " line, character
+set statusline+=%<%P " file position
+
+set ruler
+
+set showcmd
+
+let mapleader=","
+
+"key binding crtl-s = save file
+:nmap <C-s> :up<cr>
+:imap <C-s> <esc>:up<cr>a
+
+map <C-DOWN> gj
+map <C-UP> gk
+imap <C-UP> <ESC>gki
+imap <C-DOWN> <ESC>gji
+
