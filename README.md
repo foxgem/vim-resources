@@ -8,3 +8,4 @@ my vim configuration
 1. In your .vimrc, include the following two lines
    - source .../vim-resources/.vimrc.my
    - source .../vim-resources/.vimrc.my.bundle
+1. Open Vim, then type ":BundleInstall" to install bundles
