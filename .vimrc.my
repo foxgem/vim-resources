@@ -38,3 +38,10 @@ map <C-UP> gk
 imap <C-UP> <ESC>gki
 imap <C-DOWN> <ESC>gji
 
+" Open NERDTree when vim is launched
+if isdirectory(argv(0))
+    bd
+    autocmd vimenter * exe "cd" argv(0)
+endif
+autocmd VimEnter * NERDTree
+
