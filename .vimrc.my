@@ -45,3 +45,6 @@ if isdirectory(argv(0))
 endif
 autocmd VimEnter * NERDTree
 
+"remapping '<C-y>,' to 'ee' for tag expansion in emmet plugin
+imap ee <C-y>,
+
