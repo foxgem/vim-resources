@@ -11,3 +11,4 @@ my vim configuration
    - source .../vim-resources/.vimrc.my.bundle
 1. Open Vim, then type ":BundleInstall" to install bundles
 1. To show all the bundles installed, use ":BundleList"
+1. To update bundles, use ":BundleUpdate"
